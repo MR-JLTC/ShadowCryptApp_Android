@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1a1a2e"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="20dp"
+            android:background="@drawable/header_background">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@mipmap/ic_launcher_logo_round"
+                android:contentDescription="ShadowCrypt Logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ShadowCrypt"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Secure Text Encryption &amp; Decryption"
+                android:textSize="14sp"
+                android:textColor="#C4B5FD"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Powered by ShadowCryptLibV1.5"
+                android:textSize="12sp"
+                android:textColor="#9CA3AF"
+                android:layout_marginTop="8dp"
+                android:padding="8dp"
+                android:background="@drawable/info_background" />
+        </LinearLayout>
+
+        <!-- Main Content Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="#2D2D44"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Operation Selection -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select Operation"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#C4B5FD"
+                    android:layout_marginBottom="8dp" />
+
+                <RadioGroup
+                    android:id="@+id/operationGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/radio_group_background"
+                    android:padding="4dp"
+                    android:layout_marginBottom="16dp">
+
+                    <RadioButton
+                        android:id="@+id/encryptRadio"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Encrypt"
+                        android:textColor="#FFFFFF"
+                        android:checked="true"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:background="@drawable/radio_button_selector" />
+
+                    <RadioButton
+                        android:id="@+id/decryptRadio"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Decrypt"
+                        android:textColor="#FFFFFF"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:background="@drawable/radio_button_selector" />
+                </RadioGroup>
+
+                <!-- Cipher Type Selection -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cipher Algorithm"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#C4B5FD"
+                    android:layout_marginBottom="8dp" />
+
+                <Spinner
+                    android:id="@+id/cipherSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/spinner_background"
+                    android:padding="3dp"
+                    android:layout_marginBottom="16dp"
+                    android:popupBackground="#2D2D44" />
+
+                <!-- Key Input -->
+                <TextView
+                    android:id="@+id/keyLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Key"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#C4B5FD"
+                    android:layout_marginBottom="8dp" />
+
+                <EditText
+                    android:id="@+id/keyInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Enter key"
+                    android:textColorHint="#6B7280"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:background="@drawable/edittext_background"
+                    android:padding="12dp"
+                    android:inputType="number"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Input Text -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Input Text"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#C4B5FD"
+                    android:layout_marginBottom="8dp" />
+
+                <EditText
+                    android:id="@+id/inputText"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:hint="Enter text to process..."
+                    android:textColorHint="#6B7280"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:background="@drawable/edittext_background"
+                    android:padding="12dp"
+                    android:gravity="top"
+                    android:inputType="textMultiLine"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Process Button -->
+                <Button
+                    android:id="@+id/processButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:text="ENCRYPT"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/button_primary"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Output Text -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Output"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#C4B5FD"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/outputText"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:text=""
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/output_background"
+                    android:padding="12dp"
+                    android:scrollbars="vertical"
+                    android:visibility="gone"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- Action Buttons -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/copyButton"
+                        android:layout_width="0px"
+                        android:layout_height="56dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_secondary"
+                        android:text="COPY"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:visibility="gone"/>
+
+                    <Button
+                        android:id="@+id/clearButton"
+                        android:layout_width="25dp"
+                        android:layout_height="56dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_secondary"
+                        android:text="CLEAR"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Developer Info -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="#2D2D44"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="© 2025 ShadowCrypt. Dev: Mr.Loyd, B.S. CS"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:textColor="#A78BFA"
+                    android:layout_marginBottom="8dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>
