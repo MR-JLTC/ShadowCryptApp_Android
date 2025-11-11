@@ -3,7 +3,14 @@ Trying to be creative in mobile development by practicing MVVM architecture and 
 --------------
 `Preview`
 
-<img src="https://github.com/user-attachments/assets/6b5e8886-871d-4977-acc9-0b61bfbab726" width="300"/>
-<img src="https://github.com/user-attachments/assets/aaafb993-510b-4248-84e7-a553c8ddb392" width="300"/>
-<img src="https://github.com/user-attachments/assets/40c4ba52-7477-4ee8-b8a7-e45d45a1b5ae" width="300"/>
-<img src="https://github.com/user-attachments/assets/c06b46cb-44aa-47e9-aad5-518bd3db2239" width="300"/>
+![577281130_1468924547510062_6330037766328695836_n](https://github.com/user-attachments/assets/ac36b3da-56d3-43c3-a274-c490279cfeb7)
+![581966312_3046552628875926_3989893150034185105_n](https://github.com/user-attachments/assets/09e4cb7b-f28a-4361-959d-deb713f7a944)
+![582214529_684029904459997_3318384009525015864_n](https://github.com/user-attachments/assets/00f16c52-bf67-41e4-a7bc-44670668f63c)
+
+--------------
+`Execution`
+
+https://github.com/user-attachments/assets/a11c07b9-4eab-498c-824c-2943af3befd5
+
+
+
