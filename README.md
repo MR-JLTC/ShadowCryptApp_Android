@@ -29,8 +29,7 @@ https://github.com/user-attachments/assets/a11c07b9-4eab-498c-824c-2943af3befd5
 
 ## 💡 Highlights
 - Clean and scalable architecture  
-- Interactive and modern UI design  
-- Secure data handling with hashed passwords  
+- Interactive and modern UI design   
 - Built using **Koala Android Studio**
 
 ---
