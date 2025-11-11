@@ -1,16 +1,36 @@
-# ShadowCrypt_AndroidApp
-Trying to be creative in mobile development by practicing MVVM architecture and various design patterns in this repository.
---------------
-`Preview`
+# 📱 ShadowCrypt Android App
 
-![577281130_1468924547510062_6330037766328695836_n](https://github.com/user-attachments/assets/ac36b3da-56d3-43c3-a274-c490279cfeb7)
-![581966312_3046552628875926_3989893150034185105_n](https://github.com/user-attachments/assets/09e4cb7b-f28a-4361-959d-deb713f7a944)
-![582214529_684029904459997_3318384009525015864_n](https://github.com/user-attachments/assets/00f16c52-bf67-41e4-a7bc-44670668f63c)
+> Practicing **MVVM architecture**, applying **various design patterns**, and exploring creativity in mobile development through this project.
 
---------------
-`Execution`
+---
+
+## 🖼️ Preview
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ac36b3da-56d3-43c3-a274-c490279cfeb7" alt="Screenshot 1" width="30%" />
+  <img src="https://github.com/user-attachments/assets/09e4cb7b-f28a-4361-959d-deb713f7a944" alt="Screenshot 2" width="30%" />
+  <img src="https://github.com/user-attachments/assets/00f16c52-bf67-41e4-a7bc-44670668f63c" alt="Screenshot 3" width="30%" />
+</p>
+
+---
+
+## ▶️ Execution
 
 https://github.com/user-attachments/assets/a11c07b9-4eab-498c-824c-2943af3befd5
 
+---
 
+## 🧩 Tech Stack
+- **Language:** Java  
+- **Architecture:** MVVM    
+- **UI Components:** RecyclerView, Fragments, AlertDialog, PopupWindow  
 
+---
+
+## 💡 Highlights
+- Clean and scalable architecture  
+- Interactive and modern UI design  
+- Secure data handling with hashed passwords  
+- Built using **Koala Android Studio**
+
+---
