@@ -33,3 +33,26 @@ https://github.com/user-attachments/assets/a11c07b9-4eab-498c-824c-2943af3befd5
 - Built using **Koala Android Studio**
 
 ---
+
+## 🤩 Contribution 
+
+<a href="https://github.com/MR-JLTC/ShadowCryptApp_Android/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=MR-JLTC/ShadowCryptApp_Android&preview=true&max=&columns=" />
+</a>
+<br /><br />
+
+## 📩 Disclaimer 
+
+This tool is only for learning and research purposes, and any consequences arising from the use of this tool are borne
+by the user.
+
+## ⭐ Star History 
+
+<div align="center">
+
+[![Star History Chart](https://api.star-history.com/svg?repos=MR-JLTC/ShadowCryptApp_Android&type=Date)](https://star-history.com/#MR-JLTC/ShadowCryptApp_Android&Date)
+
+</div>
+
+## 📝 License 
+Please refer to the [LICENSE](LICENSE.md) file for details.
